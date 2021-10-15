@@ -11,8 +11,19 @@
   --fox-darkest-orange: #FF6003;
 }
 
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
 .App {
   text-align: center;
+  background-color: var(--quaternary_bg);
 }
 
 .App-logo {
@@ -49,3 +60,47 @@
     transform: rotate(360deg);
   }
 }
+
+.primary_bg {
+  background: var(--primary) !important;
+}
+.secondary_bg {
+  background: var(--secondary);
+}
+.tertiary_bg {
+  background: var(--tertiary);
+}
+.quaternary_bg {
+  background: var(--quaternary);
+}
+.quinary_bg {
+  background: var(--quinary);
+}
+.senary_bg {
+  background: var(--senary);
+}
+
+.primary_text {
+  color: var(--primary) !important;
+}
+.secondary_text {
+  color: var(--secondary) !important;
+}
+.tertiary_text {
+  color: var(--tertiary) !important;
+}
+.quaternary_text {
+  color: var(--quaternary) !important;
+}
+.quinary_text {
+  color: var(--quinary) !important;
+}
+.senary_text {
+  color: var(--senary) !important;
+}
+
+.navbarIcon {
+  width: 10%;
+  /* max-height: 150px; */
+}
+
