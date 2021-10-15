@@ -6,7 +6,7 @@ import '../index.css';
 import "materialize-css/dist/js/materialize.min.js";
 import React from 'react';
 
-const SvgSection = ({}) => {
+const SvgSection = (props) => {
     return (
         <svg src=".\assets\visuals\triangleAsymmetricalNegative.svg">
         </svg>
