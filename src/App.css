@@ -11,22 +11,14 @@
   --fox-darkest-orange: #FF6003;
 }
 
-/* .footer {
-  align-self: flex-end;
-  width: 100%;
-} */
-
-.App {
-  text-align: center;
-  display: flex;
-  min-height: 100vh;
-  margin: 0;
-  background-color: var(--quaternary_bg);
+main {
+  flex: 1 0 auto;
 }
 
-.footer {
-  align-self: flex-end;
-  width: 100%;
+.App{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 .App-logo {
