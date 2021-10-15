@@ -8,7 +8,7 @@ import React from 'react';
 import {Card, Icon, CardTitle} from 'react-materialize'
 
 
-const Piece = ({showGifUrl, title, repoUrl, deploymentUrl}) => {
+const WorkCard = ({showGifUrl, title, repoUrl, deploymentUrl}) => {
     return(
         <Card
         actions={[
@@ -26,4 +26,4 @@ const Piece = ({showGifUrl, title, repoUrl, deploymentUrl}) => {
 }
 
 
-export default Piece
+export default WorkCard
