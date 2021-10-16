@@ -5,7 +5,7 @@ import Header from './components/Header.jsx'
 
 function App() {
 
-    const [bgColor, setBgColor] = useState('bg_primary');
+    const [bgColor, setBgColor] = useState('primary_bg');
     const [textColor, setTextColor] = useState('senary_text');
 
     return (

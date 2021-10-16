@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import M from 'materialize-css';
-import {NavbarIcon, Icon, Button, SideNavItem, SideNav} from 'react-materialize'
+import {NavbarIcon, NavItem, Icon, Button, SideNavItem, SideNav, Navbar} from 'react-materialize'
 import '../App.css'
 
 
@@ -20,53 +20,34 @@ const Header = ({bg_color, text_color}) => {
 
     return (
         <header>
-            <nav>
-                <div className={`nav-wrapper ${bgColor}`}>
-                    <img className={`navbarIcon`} src="./assets/icons/star_fox_purple.svg" alt="fonyx logo" />
-                    <a id="logo-container" href="#" class={`brand-logo ${textColor}`}>FONYX <span className="hide-on-med-and-down">PRODUCTIONS</span></a>
-                    <a href="#!" className={`brand-logo ${textColor}`}></a>
-                    <ul className={`right hide-on-med-and-down ${textColor}`}>
-                        <li><a href="sass.html"><i className={`material-icons ${textColor}`}>search</i></a></li>
-                    </ul>
-                </div>
-            </nav> 
-
-            <SideNav
-                id="SideNav-34"
+            <Navbar className={`${bgColor}`}
+                alignLinks="right"
+                brand={
+                    <a href="#" className={`${textColor}`}>FONYX <span className="hide-on-med-and-down">PRODUCTIONS</span>
+                    </a>
+                }
+                id="mobile-nav"
+                menuIcon={<Icon>menu</Icon>}
                 options={{
-                draggable: true
-                }}
-                trigger={<Button node="button">SIDE NAV DEMO</Button>}
-            >
-                <SideNavItem
-                user={{
-                    background: 'https://placeimg.com/640/480/tech',
-                    email: 'jdandturk@gmail.com',
-                    image: 'static/media/react-materialize-logo.824c6ea3.svg',
-                    name: 'John Doe'
-                }}
-                userView
-                />
-                <SideNavItem
-                href="#!icon"
-                icon={<Icon>cloud</Icon>}
-                >
-                First Link With Icon
-                </SideNavItem>
-                <SideNavItem href="#!second">
-                Second Link
-                </SideNavItem>
-                <SideNavItem divider />
-                <SideNavItem subheader>
-                Subheader
-                </SideNavItem>
-                <SideNavItem
-                href="#!third"
-                waves
-                >
-                Third Link With Waves
-                </SideNavItem>
-            </SideNav>
+                  draggable: true,
+                  edge: 'left',
+                  inDuration: 250,
+                  onCloseEnd: null,
+                  onCloseStart: null,
+                  onOpenEnd: null,
+                  onOpenStart: null,
+                  outDuration: 200,
+                  preventScrolling: true
+                }}>
+                
+                
+                <NavItem children={
+                    <img className={`navbarIcon`} src="./assets/icons/flower_fox_orange.svg" alt="fonyx logo" />
+                }/>
+                <NavItem children={
+                    <i className={`material-icons ${textColor}`}>search</i>
+                }/>
+            </Navbar>
 
         </header>
     )
