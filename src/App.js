@@ -1,47 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
-//eslint-disable-next-line
 import Materialize from 'materialize-css/dist/css/materialize.min.css';
-
+import Header from './components/Header.jsx'
 
 function App() {
+
+    const [bgColor, setBgColor] = useState('bg_primary');
+    const [textColor, setTextColor] = useState('senary_text');
+
     return (
       <div className="App">
-          <header>
-            <nav>
-                <div className="nav-wrapper">
-                <a href="#!" className="brand-logo"><i className="material-icons">cloud</i>Logo</a>
-                <ul className="right hide-on-med-and-down">
-                    <li><a href="sass.html"><i className="material-icons">search</i></a></li>
-                    <li><a href="badges.html"><i className="material-icons">view_module</i></a></li>
-                    <li><a href="collapsible.html"><i className="material-icons">refresh</i></a></li>
-                    <li><a href="mobile.html"><i className="material-icons">more_vert</i></a></li>
-                </ul>
-                </div>
-            </nav>
-
-            <ul id="slide-out" className="sidenav">
-                <li><div className="user-view">
-                <div className="background">
-                    <img src="images/office.jpg"/>
-                </div>
-                <a href="#user"><img className="circle" src="images/yuna.jpg"/></a>
-                <a href="#name"><span className="white-text name">John Doe</span></a>
-                <a href="#email"><span className="white-text email">jdandturk@gmail.com</span></a>
-                </div></li>
-                <li><a href="#!"><i className="material-icons">cloud</i>First Link With Icon</a></li>
-                <li><a href="#!">Second Link</a></li>
-                <li><div className="divider"></div></li>
-                <li><a className="subheader">Subheader</a></li>
-                <li><a className="waves-effect" href="#!">Third Link With Waves</a></li>
-            </ul>
-            <a href="#" data-target="slide-out" className="sidenav-trigger"><i className="material-icons">menu</i></a>
-            <img 
-            className="navbarIcon" 
-            src="./assets/icons/flower_fox_orange.svg" 
-            alt="fonyx logo">
-            </img>
-          </header>
+          <Header bg_color={bgColor} text_color={textColor}/>
           <main>
             <div className='row'>
               <div className='col m6'>

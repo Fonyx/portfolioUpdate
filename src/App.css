@@ -57,7 +57,7 @@ main {
 }
 
 .primary_bg {
-  background: var(--primary) !important;
+  background: var(--primary);
 }
 .secondary_bg {
   background: var(--secondary);
@@ -95,7 +95,9 @@ main {
 }
 
 .navbarIcon {
-  width: 10%;
+  min-height: 48px;
+  max-height: 56px;
+  padding: 5px 5px 5px 5px;
   /* max-height: 150px; */
 }
 
