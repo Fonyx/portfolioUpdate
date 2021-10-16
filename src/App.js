@@ -45,17 +45,17 @@ function App() {
           <main>
             <div className='row'>
               <div className='col m6'>
-                <div class="col s12 m7">
-                  <h2 class="header">Budgie</h2>
-                  <div class="card horizontal">
-                    <div class="card-image">
+                <div className="col s12 m7">
+                  <h2 className="header">Budgie</h2>
+                  <div className="card horizontal">
+                    <div className="card-image">
                       <img src="https://github.com/Fonyx/budgie/blob/main/assets/images/show.gif?raw=true" />
                     </div>
-                    <div class="card-stacked">
-                      <div class="card-content">
+                    <div className="card-stacked">
+                      <div className="card-content">
                         <p>I am a very simple card. I am good at containing small bits of information.</p>
                       </div>
-                      <div class="card-action">
+                      <div className="card-action">
                         <a href="https://github.com/Fonyx/budgie">Repo</a>
                         <a href="https://fonyx-budgie.herokuapp.com/">Deployed</a>
                       </div>
