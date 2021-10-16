@@ -22,24 +22,11 @@ const Header = ({bg_color, text_color}) => {
         <header>
             <Navbar className={`${bgColor}`}
                 alignLinks="right"
+                id="header"
                 brand={
                     <a href="#" className={`${textColor}`}>FONYX <span className="hide-on-med-and-down">PRODUCTIONS</span>
                     </a>
-                }
-                id="mobile-nav"
-                menuIcon={<Icon>menu</Icon>}
-                options={{
-                  draggable: true,
-                  edge: 'left',
-                  inDuration: 250,
-                  onCloseEnd: null,
-                  onCloseStart: null,
-                  onOpenEnd: null,
-                  onOpenStart: null,
-                  outDuration: 200,
-                  preventScrolling: true
-                }}>
-                
+                }>
                 
                 <NavItem children={
                     <img className={`navbarIcon`} src="./assets/icons/flower_fox_orange.svg" alt="fonyx logo" />
