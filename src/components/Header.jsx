@@ -1,42 +1,73 @@
-import React, { Component, useState, useEffect } from 'react'
-import Materialize from 'materialize-css/dist/css/materialize.min.css';
+import React, { useState, useEffect } from 'react'
+import M from 'materialize-css';
+import {NavbarIcon, Icon, Button, SideNavItem, SideNav} from 'react-materialize'
 import '../App.css'
+
+
 const Header = ({bg_color, text_color}) => {
 
     const [bgColor, setBgColor] = useState(bg_color);
     const [textColor, setTextColor] = useState(text_color);
 
+    // initialize materialize sidenav on attach
+    useEffect(() => {
+        document.addEventListener('DOMContentLoaded', function() {
+            var options = {};
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems, options);
+          });
+    }, [])
 
     return (
         <header>
-        <nav>
-            <div className={`nav-wrapper ${bgColor}`}>
-            <img className={`navbarIcon`} src="./assets/icons/star_fox_purple.svg" alt="fonyx logo" />
-            <a id="logo-container" href="#" class={`brand-logo left ${textColor}`}>FONYX PRODUCTIONS</a>
-            <a href="#!" className={`brand-logo ${textColor}`}></a>
-                <ul className={`right hide-on-med-and-down ${textColor}`}>
-                    <li><a href="sass.html"><i className={`material-icons ${textColor}`}>search</i></a></li>
-                </ul>
-            </div>
-        </nav> 
+            <nav>
+                <div className={`nav-wrapper ${bgColor}`}>
+                    <img className={`navbarIcon`} src="./assets/icons/star_fox_purple.svg" alt="fonyx logo" />
+                    <a id="logo-container" href="#" class={`brand-logo ${textColor}`}>FONYX <span className="hide-on-med-and-down">PRODUCTIONS</span></a>
+                    <a href="#!" className={`brand-logo ${textColor}`}></a>
+                    <ul className={`right hide-on-med-and-down ${textColor}`}>
+                        <li><a href="sass.html"><i className={`material-icons ${textColor}`}>search</i></a></li>
+                    </ul>
+                </div>
+            </nav> 
 
-        <ul id="slide-out" className="sidenav">
-            <li><div className="user-view">
-            <div className="background">
-                <img src="images/office.jpg"/>
-            </div>
-            <a href="#user"><img className="circle" src="images/yuna.jpg"/></a>
-            <a href="#name"><span className="white-text name">John Doe</span></a>
-            <a href="#email"><span className="white-text email">jdandturk@gmail.com</span></a>
-            </div></li>
-            <li><a href="#!"><i className="material-icons">cloud</i>First Link With Icon</a></li>
-            <li><a href="#!">Second Link</a></li>
-            <li><div className="divider"></div></li>
-            <li><a className="subheader">Subheader</a></li>
-            <li><a className="waves-effect" href="#!">Third Link With Waves</a></li>
-        </ul>
+            <SideNav
+                id="SideNav-34"
+                options={{
+                draggable: true
+                }}
+                trigger={<Button node="button">SIDE NAV DEMO</Button>}
+            >
+                <SideNavItem
+                user={{
+                    background: 'https://placeimg.com/640/480/tech',
+                    email: 'jdandturk@gmail.com',
+                    image: 'static/media/react-materialize-logo.824c6ea3.svg',
+                    name: 'John Doe'
+                }}
+                userView
+                />
+                <SideNavItem
+                href="#!icon"
+                icon={<Icon>cloud</Icon>}
+                >
+                First Link With Icon
+                </SideNavItem>
+                <SideNavItem href="#!second">
+                Second Link
+                </SideNavItem>
+                <SideNavItem divider />
+                <SideNavItem subheader>
+                Subheader
+                </SideNavItem>
+                <SideNavItem
+                href="#!third"
+                waves
+                >
+                Third Link With Waves
+                </SideNavItem>
+            </SideNav>
 
-        <a href="#" data-target="slide-out" className="sidenav-trigger"><i className="material-icons">menu</i></a>
         </header>
     )
     
