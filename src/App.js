@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
-import Materialize from 'materialize-css/dist/css/materialize.min.css';
+// tslint:disable-next-line
+import 'materialize-css/dist/css/materialize.min.css';
 import {Container} from 'react-materialize';
 import Header from './components/Header'
 import About from './components/About'
@@ -12,21 +13,49 @@ import Resume from './components/Resume';
 
 function App() {
 
-    const [bgColor, setBgColor] = useState('quaternary_bg');
-    const [textColor, setTextColor] = useState('quinary_text');
+    const textColor = 'quinary_text'
+
+    const [currentPage, setCurrentPage] = useState('About');
+
+    // conditionally update state
+    const renderPage = () => {
+      console.log(`Rendering page: ${currentPage}`)
+      if (currentPage === 'About') {
+        return <About textColor={textColor}/>;
+      }
+      if (currentPage === 'Experience') {
+        return <Experience textColor={textColor}/>;
+      }
+      if (currentPage === 'Work') {
+        return <Work textColor={textColor}/>;
+      }
+      if (currentPage === 'Contact') {
+        return <Contact textColor={textColor}/>;
+      }
+      return <Resume textColor={textColor}/>;
+    };
+
+    const updatePage = (page) => {
+      setCurrentPage(page)
+    }
 
     return (
       <div className="App">
-          <Header bgColor="tertiary_bg" textColor={textColor}/>
+          <Header 
+            bgColor="tertiary_bg" 
+            textColor={textColor} 
+            currentPage={currentPage}
+            updatePage={updatePage}
+          />
           <main>
             <Container>
-              <About textColor={textColor}></About>
+              {renderPage()}
+              {/* <About textColor={textColor}></About>
               <Experience textColor={textColor}></Experience>
               <Work textColor={textColor}></Work>
               <Contact textColor={textColor}></Contact>
-              <Resume textColor={textColor}></Resume>
+              <Resume textColor={textColor}></Resume> */}
             </Container>
-            
           </main>
           <Footer bgColor="transparentBG" textColor={textColor}></Footer>
       </div>

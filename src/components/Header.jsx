@@ -4,16 +4,7 @@ import {NavItem, Navbar} from 'react-materialize'
 import '../App.css'
 
 
-const Header = ({bgColor, textColor}) => {
-
-    // initialize materialize sidenav on attach
-    useEffect(() => {
-        document.addEventListener('DOMContentLoaded', function() {
-            var options = {};
-            var elems = document.querySelectorAll('.sidenav');
-            var instances = M.Sidenav.init(elems, options);
-          });
-    }, [])
+const Header = ({bgColor, textColor, currentPage, updatePage}) => {
 
     return (
         <header>
@@ -23,19 +14,34 @@ const Header = ({bgColor, textColor}) => {
                 brand={<img className={`navbarIcon`} src="./assets/icons/flower_fox_orange.svg" alt="fonyx logo" />}
                 sidenav={
                     <ul>
-                        <li className="sidenav_link"><a href="/about" className={`${textColor}`}>About</a></li>
-                        <li className="sidenav_link"><a href="/experience" className={`${textColor}`}>Experience</a></li>
-                        <li className="sidenav_link"><a href="/work" className={`${textColor}`}>Work</a></li>
-                        <li className="sidenav_link"><a href="/contact" className={`${textColor}`}>Contact</a></li>
-                        <li className="sidenav_link"><a href="/resume" className={`${textColor}`}>Resume</a></li>
+                        <li className="sidenav_link"><a href="#about"       
+                            onClick={() => updatePage('About')} 
+                            className={currentPage==='About'? 'active':'inactive '+`${textColor}`}>About</a>
+                        </li>
+                        <li className="sidenav_link"><a href="#experience"  
+                            onClick={() => updatePage('Experience')} 
+                            className={currentPage==='Experience'? 'active':'inactive '+`${textColor}`}>Experience</a>
+                        </li>
+                        <li className="sidenav_link"><a href="#work"        
+                            onClick={() =>  updatePage('Work')} 
+                            className={currentPage==='Work'? 'active':'inactive '+`${textColor}`}>Work</a>
+                        </li>
+                        <li className="sidenav_link"><a href="#contact"     
+                            onClick={() =>  updatePage('Contact')} 
+                            className={currentPage==='Contact'? 'active':'inactive '+`${textColor}`}>Contact</a>
+                        </li>
+                        <li className="sidenav_link"><a href="#resume"     
+                            onClick={() =>  updatePage('Resume')} 
+                            className={currentPage==='Resume'? 'active':'inactive '+`${textColor}`}>Resume</a>
+                        </li>
                     </ul>
                 }
                 >
-                <NavItem className={`${textColor}`}>About</NavItem>
-                <NavItem className={`${textColor}`}>Experience</NavItem>
-                <NavItem className={`${textColor}`}>Work</NavItem>
-                <NavItem className={`${textColor}`}>Contact</NavItem>
-                <NavItem className={`${textColor}`}>Resume</NavItem>
+                <NavItem className={currentPage==='About'? 'active':'inactive '+`${textColor}`} onClick={() =>  updatePage('About')}>About</NavItem>
+                <NavItem className={currentPage==='Experience'? 'active':'inactive '+`${textColor}`} onClick={() =>  updatePage('Experience')}>Experience</NavItem>
+                <NavItem className={currentPage==='Work'? 'active':'inactive '+`${textColor}`} onClick={() =>  updatePage('Work')}>Work</NavItem>
+                <NavItem className={currentPage==='Contact'? 'active':'inactive '+`${textColor}`} onClick={() =>  updatePage('Contact')}>Contact</NavItem>
+                <NavItem className={currentPage==='Resume'? 'active':'inactive '+`${textColor}`} onClick={() =>  updatePage('Resume')}>Resume</NavItem>
             </Navbar>
         </header>
     )

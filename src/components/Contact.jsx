@@ -1,6 +1,5 @@
 import React from 'react'
-import M from 'materialize-css';
-import {Row, Col, Button} from 'react-materialize'
+import {Button} from 'react-materialize'
 import '../App.css'
 
 function Contact({textColor}) {
