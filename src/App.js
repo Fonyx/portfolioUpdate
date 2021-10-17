@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './App.css';
 import Materialize from 'materialize-css/dist/css/materialize.min.css';
 import Header from './components/Header.jsx'
+import WorkPiece from './components/WorkPiece'
+import {Row, Col} from 'react-materialize';
 
 function App() {
 
@@ -12,27 +14,17 @@ function App() {
       <div className="App">
           <Header bg_color={bgColor} text_color={textColor}/>
           <main>
-            <div className='row'>
-              <div className='col m6'>
-                <div className="col s12 m7">
-                  <h2 className="header">Budgie</h2>
-                  <div className="card horizontal">
-                    <div className="card-image">
-                      <img src="https://github.com/Fonyx/budgie/blob/main/assets/images/show.gif?raw=true" />
-                    </div>
-                    <div className="card-stacked">
-                      <div className="card-content">
-                        <p>I am a very simple card. I am good at containing small bits of information.</p>
-                      </div>
-                      <div className="card-action">
-                        <a href="https://github.com/Fonyx/budgie">Repo</a>
-                        <a href="https://fonyx-budgie.herokuapp.com/">Deployed</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <Row>
+              <Col>
+                <WorkPiece 
+                title="Budgie"
+                img={"https://github.com/Fonyx/budgie/blob/main/assets/images/show.gif?raw=true"}
+                bg_color={bgColor} 
+                text_color={textColor} 
+                tags={'test1,test2,test3'}/>
+              </Col>
+            </Row>
+
           </main>
           <footer className="footer">
             <div>

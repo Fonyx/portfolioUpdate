@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import M from 'materialize-css';
-import {NavbarIcon, NavItem, Icon, Button, SideNavItem, SideNav, Navbar} from 'react-materialize'
+import {NavItem, Navbar} from 'react-materialize'
 import '../App.css'
 
 
