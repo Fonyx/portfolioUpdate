@@ -4,10 +4,8 @@ import {Card, Icon, CardTitle, Button} from 'react-materialize'
 import '../App.css'
 
 
-const WorkPiece = ({img, title, bg_color, text_color, tags}) => {
-
-
-    // initialize materialize sidenav on attach
+const WorkPiece = ({props}) => {
+    console.log(props)
     useEffect(() => {
         document.addEventListener('DOMContentLoaded', function() {
             var options = {};
@@ -16,29 +14,22 @@ const WorkPiece = ({img, title, bg_color, text_color, tags}) => {
           });
     }, [])
 
-    var tagHtml = tags.split(',').map((tag, index) => {
-        return <Button key={`${index}`} className='card-tag'>{tag}</Button>
-    });
-
     return (
         <Card 
             actions={[
-                <a key="1" href="https://github.com/Fonyx/budgie" target="_blank">Repo</a>,
-                <a key="2" href="https://fonyx-budgie.herokuapp.com/" target="_blank">Deployed</a>
+                <a key="1" href={props.repo} target="_blank">Repo</a>,
+                <a key="2" href={props.deploy} target="_blank">Deployed</a>
             ]}
-            className={`${bg_color} darken-1`}
+            className={`${props.bg_color} darken-1`}
             closeIcon={<Icon>close</Icon>}
             revealIcon={<Icon>more_vert</Icon>}
-            textClassName={`${text_color}`}
-            title={title}
-            header={<CardTitle image={img} />}
+            textClassName={`${props.text_color}`}
+            title={props.title}
+            header={<CardTitle image={props.img} />}
             horizontal
             >
             <div className='card-details'>
                 <p className="card-blurb">A budgeting app built </p>
-                <div className='tags'>
-                    {tagHtml}
-                </div>
             </div>
         </Card>
     )
