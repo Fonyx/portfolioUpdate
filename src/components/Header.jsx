@@ -20,22 +20,17 @@ const Header = ({bg_color, text_color}) => {
 
     return (
         <header>
-            <Navbar className={`${bgColor}`}
+            <Navbar className="transparentBG"
                 alignLinks="right"
                 id="header"
-                brand={
-                    <a href="#" className={`${textColor}`}>FONYX <span className="hide-on-med-and-down">PRODUCTIONS</span>
-                    </a>
-                }>
-                
-                <NavItem children={
-                    <img className={`navbarIcon`} src="./assets/icons/flower_fox_orange.svg" alt="fonyx logo" />
-                }/>
-                <NavItem children={
-                    <i className={`material-icons ${textColor}`}>search</i>
-                }/>
+                brand={<img className={`navbarIcon`} src="./assets/icons/flower_fox_orange.svg" alt="fonyx logo" />}
+                >
+                <NavItem className={`${textColor}`}>About</NavItem>
+                <NavItem className={`${textColor}`}>Experience</NavItem>
+                <NavItem className={`${textColor}`}>Work</NavItem>
+                <NavItem className={`${textColor}`}>Contact</NavItem>
+                <NavItem className={`${textColor}`}>Resume</NavItem>
             </Navbar>
-
         </header>
     )
     
