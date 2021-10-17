@@ -6,6 +6,7 @@ import '../App.css'
 function Contact() {
     return (
         <div>
+            <h3>Contact</h3>
            <h2>Come buy me a coffee and we can chat</h2>
 
            <a href="mailto:nick.alex.ritchie@gmail.com">

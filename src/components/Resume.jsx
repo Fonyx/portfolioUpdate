@@ -6,6 +6,7 @@ import '../App.css'
 export default function Resume() {
     return (
         <div>
+            <h3>Resume</h3>
             <a href="https://fonyx.github.io/resume/" target="_blank">
                 <Button className="secondary_bg" waves='purple'>Resume
                 </Button>
