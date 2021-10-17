@@ -102,7 +102,7 @@ main {
 }
 
 nav ul a:hover {
-  background-color: rgba(0, 0, 0, 0) !important;
+    background-color: rgba(0, 0, 0, 0) !important;
 }
 
 .transparentBG {
@@ -113,7 +113,7 @@ nav ul a:hover {
   background-image: linear-gradient(90deg, #AE4D75, #F06F53);
 }
 
-.nav-wrapper .active{
+.active{
   text-transform: uppercase;
 }
 
@@ -122,7 +122,7 @@ nav ul a:hover {
   position: relative;
 }
 
-.nav ul li a:before{
+.nav-wrapper ul li a:before{
   content: "";
   width: 0;
   height: 5px;
@@ -133,7 +133,7 @@ nav ul a:hover {
   transition: all 0.5s;
 }
 
-.nav ul li a:after{
+.nav-wrapper ul li a:after{
   content: "";
   width: 0;
   height: 5px;
@@ -144,12 +144,12 @@ nav ul a:hover {
   transition: all 0.5s;
 }
 
-.nav ul li a:hover:before{
+.nav-wrapper ul li a:hover:before{
   width: 50%;
   transform: translateX(100%);
 }
 
-.nav ul li a:hover:after{
+.nav-wrapper ul li a:hover:after{
   width: 50%;
   transform: translateX(-100%);
 }

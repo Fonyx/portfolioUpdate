@@ -50,11 +50,6 @@ function App() {
           <main>
             <Container>
               {renderPage()}
-              {/* <About textColor={textColor}></About>
-              <Experience textColor={textColor}></Experience>
-              <Work textColor={textColor}></Work>
-              <Contact textColor={textColor}></Contact>
-              <Resume textColor={textColor}></Resume> */}
             </Container>
           </main>
           <Footer bgColor="transparentBG" textColor={textColor}></Footer>
