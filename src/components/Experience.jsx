@@ -4,10 +4,10 @@ import {Row, Col} from 'react-materialize'
 import '../App.css'
 
 
-const Experience = (props) => {
+const Experience = ({textColor}) => {
 
     return (
-        <Row>
+        <Row className={`${textColor}`}>
             <Col>
                 <h2>Companies</h2>
             </Col>

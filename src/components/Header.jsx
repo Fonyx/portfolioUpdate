@@ -4,10 +4,7 @@ import {NavItem, Navbar} from 'react-materialize'
 import '../App.css'
 
 
-const Header = ({bg_color, text_color}) => {
-
-    const [bgColor, setBgColor] = useState(bg_color);
-    const [textColor, setTextColor] = useState(text_color);
+const Header = ({bgColor, textColor}) => {
 
     // initialize materialize sidenav on attach
     useEffect(() => {
@@ -24,6 +21,15 @@ const Header = ({bg_color, text_color}) => {
                 alignLinks="right"
                 id="header"
                 brand={<img className={`navbarIcon`} src="./assets/icons/flower_fox_orange.svg" alt="fonyx logo" />}
+                sidenav={
+                    <ul>
+                        <li className="sidenav_link"><a href="/about" className={`${textColor}`}>About</a></li>
+                        <li className="sidenav_link"><a href="/experience" className={`${textColor}`}>Experience</a></li>
+                        <li className="sidenav_link"><a href="/work" className={`${textColor}`}>Work</a></li>
+                        <li className="sidenav_link"><a href="/contact" className={`${textColor}`}>Contact</a></li>
+                        <li className="sidenav_link"><a href="/resume" className={`${textColor}`}>Resume</a></li>
+                    </ul>
+                }
                 >
                 <NavItem className={`${textColor}`}>About</NavItem>
                 <NavItem className={`${textColor}`}>Experience</NavItem>
