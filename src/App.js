@@ -19,7 +19,6 @@ function App() {
 
     // conditionally update state
     const renderPage = () => {
-      console.log(`Rendering page: ${currentPage}`)
       if (currentPage === 'About') {
         return <About textColor={textColor}/>;
       }
@@ -41,6 +40,7 @@ function App() {
 
     return (
       <div className="App">
+          <div id="particles-js"></div>
           <Header 
             bgColor="tertiary_bg" 
             textColor={textColor} 
