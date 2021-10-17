@@ -30,7 +30,7 @@ const WorkPiece = ({img, title, bg_color, text_color, tags}) => {
             closeIcon={<Icon>close</Icon>}
             revealIcon={<Icon>more_vert</Icon>}
             textClassName={`${text_color}`}
-            title={<h2>{title}</h2>}
+            title={title}
             header={<CardTitle image={img} />}
             horizontal
             >
