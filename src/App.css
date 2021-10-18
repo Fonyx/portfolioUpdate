@@ -154,3 +154,10 @@ nav ul a:hover {
   transform: translateX(-100%);
 }
 
+#tsparticles{
+  width: 100vw;
+  height: 90vh;
+  position: absolute;
+  z-index: -1;
+}
+

@@ -10,6 +10,7 @@ import Work from './components/Work'
 import Footer from './components/Footer'
 import Contact from './components/Contact';
 import Resume from './components/Resume';
+import Particles from 'react-particles-js';
 
 function App() {
 
@@ -39,14 +40,27 @@ function App() {
     }
 
     return (
-      <div className="App" id="app-div">
-          <Header 
+      <div className="App">
+          <Header
             bgColor="tertiary_bg" 
             textColor={textColor} 
             currentPage={currentPage}
             updatePage={updatePage}
           />
           <main>
+              <Particles
+                params={{
+                  particles: {
+                    number: {
+                      value: 100,
+                      density: {
+                        enable: true,
+                        value_area: 1000,
+                      }
+                    },
+                  },
+                }}
+              />
             <Container>
               {renderPage()}
             </Container>
