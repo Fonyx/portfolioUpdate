@@ -326,3 +326,7 @@ nav ul a:hover {
 .material-icons.active {
   color: var(--secondary) !important;
 }
+
+label{
+  color: white !important;
+}

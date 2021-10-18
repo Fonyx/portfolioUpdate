@@ -6,7 +6,7 @@ import {Container} from 'react-materialize';
 import Header from './components/Header'
 import About from './components/About'
 import Experience from './components/Experience'
-import Work from './components/Work'
+import Portfolio from './components/Portfolio'
 import Footer from './components/Footer'
 import Contact from './components/Contact';
 import Resume from './components/Resume';
@@ -26,8 +26,8 @@ function App() {
       if (currentPage === 'Experience') {
         return <Experience textColor={textColor}/>;
       }
-      if (currentPage === 'Work') {
-        return <Work textColor={textColor}/>;
+      if (currentPage === 'Portfolio') {
+        return <Portfolio textColor={textColor}/>;
       }
       if (currentPage === 'Contact') {
         return <Contact textColor={textColor}/>;
