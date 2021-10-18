@@ -14,7 +14,8 @@ function Portfolio() {
           text_color:textColor,
           repo:"https://github.com/Fonyx/budgie",
           deploy:"https://fonyx-budgie.herokuapp.com/",
-          description: "A budgeting app built allowing users to make multiple accounts and track their recurring payments"
+          description: "A budgeting app built allowing users to make multiple accounts and track their recurring payments",
+          tags: "node, chartjs, materialize"
         },
         {
           title: "Tech Blog",
@@ -23,7 +24,8 @@ function Portfolio() {
           text_color:textColor,
           repo:"https://github.com/Fonyx/tech-blog",
           deploy:"https://fonyx-tech-stack.herokuapp.com/",
-          description: "A budgeting app built allowing users to make multiple accounts and track their recurring payments"
+          description: "A blogging website for tech related discussions",
+          tags: "node, sequelize, mysql, jest"
         },
         {
           title: "Actor Lookup",
@@ -32,7 +34,8 @@ function Portfolio() {
           text_color:textColor,
           repo:"https://github.com/Fonyx/actorLookup",
           deploy:"https://fonyx.github.io/actorLookup/",
-          description: "A budgeting app built allowing users to make multiple accounts and track their recurring payments"
+          description: "An IMDB wrapper application that allows users to search for movies shared by two actors",
+          tags: "node, chartjs, materialize"
         },
         {
           title: "Weather Dashboard",
@@ -41,24 +44,23 @@ function Portfolio() {
           text_color:textColor,
           repo:"https://github.com/Fonyx/weatherDashboard",
           deploy:"https://fonyx.github.io/weatherDashboard/",
-          description: "A budgeting app built allowing users to make multiple accounts and track their recurring payments"
+          description: "An Open Weather Api wrapper application that shows current weather and forecast by city"
         },
         {
-          title: "Team Page Generator",
-          img:"https://github.com/Fonyx/teamGenerator/blob/main/assets/images/show.gif?raw=true",
+          title: "Employee Tracker CMS",
+          img:"https://github.com/Fonyx/employeeTracker/blob/main/assets/show.gif?raw=true",
           bg_color:bgColor,
           text_color:textColor,
-          repo:"https://github.com/Fonyx/teamGenerator",
-          description: "A budgeting app built allowing users to make multiple accounts and track their recurring payments"
+          repo:"https://github.com/Fonyx/employeeTracker",
+          description: "A command line application manages company department budgets and employee salaries"
         },
         {
           title: "E-commerce ORM",
           img:"https://github.com/Fonyx/eCommerceOrm/blob/main/Assets/images/show.gif?raw=true",
           bg_color:bgColor,
           text_color:textColor,
-          repo:"https://github.com/Fonyx/actorLookup",
-          deploy:"https://fonyx.github.io/actorLookup/",
-          description: "A budgeting app built allowing users to make multiple accounts and track their recurring payments"
+          repo:"https://github.com/Fonyx/eCommerceOrm",
+          description: "An ORM for a fake E commerce company selling different categories of products"
         },
       ]
   

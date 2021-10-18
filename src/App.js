@@ -16,7 +16,7 @@ function App() {
 
     const textColor = 'quinary_text'
 
-    const [currentPage, setCurrentPage] = useState('Contact');
+    const [currentPage, setCurrentPage] = useState('Portfolio');
 
     // conditionally update state
     const renderPage = () => {

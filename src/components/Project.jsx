@@ -4,13 +4,19 @@ import '../App.css'
 
 const Project = ({props}) => {
 
+    let actionsDeployMarkup = [
+        <a key="1" href={props.repo} target="_blank" rel="noopener noreferrer">Repo</a>,
+        <a key="2" href={props.deploy} target="_blank" rel="noopener noreferrer">Deployed</a>
+    ];
+    // if this project isn't deployed, pop the deployed action off the actions list
+    if(!props.deploy){
+        actionsDeployMarkup.pop();
+    }
+
     return (
         <div className='col s12 l6'>
             <Card
-                actions={[
-                    <a key="1" href={props.repo} target="_blank" rel="noopener noreferrer">Repo</a>,
-                    <a key="2" href={props.deploy} target="_blank" rel="noopener noreferrer">Deployed</a>
-                ]}
+                actions={actionsDeployMarkup}
                 className="card transparentBG"
                 textClassName={`${props.text_color}`}
                 title={props.title}
@@ -18,7 +24,7 @@ const Project = ({props}) => {
                 horizontal
                 >
                 <div className='card-details'>
-                    <p className="card-blurb">A budgeting app built</p>
+                    <p className="card-blurb">{props.description}</p>
                 </div>
             </Card>
         </div>
