@@ -6,7 +6,7 @@ import '../App.css'
 const About = ({textColor}) => {
 
     return (
-        <div className="work_section">
+        <div className="about_section">
             <h2 className={`${textColor}`}>ABOUT</h2>
             <Row>
                 <p className={`${textColor}`}>Hi, my name is</p>

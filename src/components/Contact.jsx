@@ -4,8 +4,8 @@ import '../App.css'
 
 function Contact({textColor}) {
     return (
-        <div className={`${textColor}`}>
-            <h3>Contact</h3>
+        <div className={`contact_section ${textColor}`}>
+            <h2 className={`${textColor}`}>CONTACT</h2>
             <h2>Come buy me a coffee and we can chat</h2>
 
             <a href="mailto:nick.alex.ritchie@gmail.com">
