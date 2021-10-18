@@ -259,3 +259,7 @@ nav ul a:hover {
 .card{
   background-color: rgba(0, 0, 0, 0) !important;
 }
+
+.displayPicture{
+  width: 30%;
+}

@@ -9,6 +9,7 @@ const About = ({textColor}) => {
         <div className="about_section">
             <h2 className={`${textColor}`}>ABOUT</h2>
             <Row>
+                <img className="displayPicture" src="./assets/images/circle-dp.png" alt="nicks profile"></img>
                 <p className={`${textColor}`}>Hi, my name is</p>
                 <h2 className={`${textColor}`}>Nicholas Ritchie</h2>
                 <h3 className={`${textColor}`}>And I build things....internet things</h3>

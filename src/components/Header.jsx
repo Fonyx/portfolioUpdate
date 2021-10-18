@@ -11,7 +11,7 @@ const Header = ({bgColor, textColor, currentPage, updatePage}) => {
             <Navbar className="transparentBG"
                 alignLinks="right"
                 id="header"
-                brand={<img className={`navbarIcon`} src="./assets/icons/flower_fox_orange.svg" alt="fonyx logo" />}
+                brand={<img className={`navbarIcon`} src="./assets/icons/min_fox_orange.svg" alt="fonyx logo" />}
                 sidenav={
                     <ul>
                         <li className="sidenav_link"><a href="#about"       
