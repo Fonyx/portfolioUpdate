@@ -52,20 +52,20 @@ function App() {
                 params={{
                   "particles": {
                     "number": {
-                      "value": 80,
+                      "value": 150,
                       "density": {
                         "enable": true,
                         "value_area": 800
                       }
                     },
                     "color": {
-                      "value": "#554067"
+                      "value": "#ae4d75"
                     },
                     "shape": {
                       "type": "polygon",
                       "stroke": {
                         "width": 0,
-                        "color": "#f0ab2c"
+                        "color": "#ae4d75"
                       },
                       "polygon": {
                         "nb_sides": 6
@@ -77,29 +77,29 @@ function App() {
                       }
                     },
                     "opacity": {
-                      "value": 0.06313280775270874,
+                      "value": 0.3,
                       "random": true,
                       "anim": {
                         "enable": false,
-                        "speed": 0.39957485235709195,
-                        "opacity_min": 0.1,
+                        "speed": 0.07991497047141839,
+                        "opacity_min": 0.19978742617854597,
                         "sync": false
                       }
                     },
                     "size": {
-                      "value": 11.83740145363289,
+                      "value": 13,
                       "random": true,
                       "anim": {
                         "enable": false,
-                        "speed": 40,
-                        "size_min": 0.1,
+                        "speed": 23.974491141425517,
+                        "size_min": 3.99574852357092,
                         "sync": false
                       }
                     },
                     "line_linked": {
                       "enable": true,
-                      "distance": 150,
-                      "color": "#554067",
+                      "distance": 142.0488174435947,
+                      "color": "#ae4d75",
                       "opacity": 0.4,
                       "width": 1
                     },
@@ -119,7 +119,7 @@ function App() {
                     }
                   },
                   "interactivity": {
-                    "detect_on": "canvas",
+                    "detect_on": "window",
                     "events": {
                       "onhover": {
                         "enable": true,
