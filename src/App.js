@@ -39,8 +39,7 @@ function App() {
     }
 
     return (
-      <div className="App">
-          <div id="particles-js"></div>
+      <div className="App" id="app-div">
           <Header 
             bgColor="tertiary_bg" 
             textColor={textColor} 
