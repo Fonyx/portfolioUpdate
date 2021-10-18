@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {Button} from 'react-materialize'
+import {Button, TextInput, Icon} from 'react-materialize'
 import '../App.css'
 
 function validateEmail(email) {
@@ -43,7 +43,7 @@ function Contact({textColor}) {
     e.preventDefault();
     // check the email is valid
     if (!validateEmail(email)) {
-        setErrorMessage('Email or username is invalid');
+        setErrorMessage('That email address looks fishy');
         return;
     }
     // check the form has a name
@@ -67,34 +67,34 @@ function Contact({textColor}) {
     return (
         <div className={`contact_section ${textColor}`}>
             <h2 className={`${textColor}`}>CONTACT</h2>
-            <h2>Come buy me a coffee and we can chat</h2>
 
             <a href="mailto:nick.alex.ritchie@gmail.com">
                 <Button className={`quaternary_bg ${textColor}`} waves='orange'>nick.alex.ritchie@gmail.com</Button>
             </a>
             <form className="form">
-                <input
-                value={name}
-                name="name"
-                onChange={handleInputChange}
-                type="text"
-                placeholder="Your Name"
+
+                <TextInput 
+                    icon={<Icon>person</Icon>}
+                    id="name"
+                    label="Name"
+                    onChange={handleInputChange}
                 />
-                <input
-                value={email}
-                name="email"
-                onChange={handleInputChange}
-                type="email"
-                placeholder="email"
+                <TextInput
+                    icon={<Icon>email</Icon>}
+                    id="email"
+                    label="Email"
+                    onChange={handleInputChange}
+                    validate
                 />
-                <input
-                value={message}
-                name="message"
-                onChange={handleInputChange}
-                type="text"
-                placeholder="Let's Chat, Discuss or even...gab"
+                <TextInput
+                    icon={<Icon>message</Icon>}
+                    id="message"
+                    label="Let's chat, discuss or even....gab"
+                    onChange={handleInputChange}
+                    validate
                 />
-                <button type="button" onClick={handleFormSubmit}>Submit</button>
+                <button className="btn waves-effect waves-orange quaternary_bg quinary_text" type="button" onClick={handleFormSubmit}>Submit</button>
+
             </form>
             {errorMessage && (
                 <div>
