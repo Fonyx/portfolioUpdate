@@ -65,14 +65,12 @@ function Contact({textColor}) {
     };
 
     return (
-        <div className={`contact_section ${textColor}`}>
+        <div className={`contact_section center-align ${textColor}`}>
             <h2 className={`${textColor}`}>CONTACT</h2>
 
-            <a href="mailto:nick.alex.ritchie@gmail.com">
-                <Button className={`quaternary_bg ${textColor}`} waves='orange'>nick.alex.ritchie@gmail.com</Button>
-            </a>
-            <form className="form">
+            <h4>Let me know what you would like to discuss</h4>
 
+            <form className="form center-align">
                 <TextInput 
                     icon={<Icon>person</Icon>}
                     id="name"
@@ -101,6 +99,13 @@ function Contact({textColor}) {
                 <p className="error-text">{errorMessage}</p>
                 </div>
             )}
+
+            <h4>Or if it is urgent</h4>
+
+            <a href="mailto:nick.alex.ritchie@gmail.com">
+                <Button className={`quaternary_bg ${textColor}`} waves='orange'>nick.alex.ritchie@gmail.com</Button>
+            </a>
+
         </div>
     )
 }
