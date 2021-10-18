@@ -1,7 +1,7 @@
 import React from 'react'
 import {Card, Icon, CardTitle, Row, Col} from 'react-materialize'
 import '../App.css'
-
+import Title from 'react-vanilla-tilt'
 
 const WorkPiece = ({props}) => {
 
@@ -32,28 +32,30 @@ const WorkPiece = ({props}) => {
         
     }
     return (
-        <div className="my_card">
-            <div className="my_card-image" style={styleObj}></div>
-            <div className="my_card-text">
-                <h2>Post</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim accusantium quibusdam</p>
-                <span className="date">4 days ago</span>
+        <Title>
+            <div className="my_card data-tilt">
+                <div className="my_card-image" style={styleObj}></div>
+                <div className="my_card-text">
+                    <h2>Post</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim accusantium quibusdam</p>
+                    <span className="date">4 days ago</span>
+                </div>
+                <div className="my_card-stats">
+                    <div className="stat borderY">
+                        <div className='value'>4<sup>m</sup></div>
+                        <div className='type'>read</div>
+                    </div>
+                    <div className="stat borderX borderY">
+                        <div className='value'>5123</div>
+                        <div className='type'>views</div>
+                    </div>
+                    <div className="stat borderY">
+                        <div className='value'>32</div>
+                        <div className='type'>comments</div>
+                    </div>
+                </div>
             </div>
-            <div className="my_card-stats">
-                <div className="stat borderY">
-                    <div className='value'>4<sup>m</sup></div>
-                    <div className='type'>read</div>
-                </div>
-                <div className="stat borderX borderY">
-                    <div className='value'>5123</div>
-                    <div className='type'>views</div>
-                </div>
-                <div className="stat borderY">
-                    <div className='value'>32</div>
-                    <div className='type'>comments</div>
-                </div>
-            </div>
-        </div>
+        </Title>
     )
     
 }

@@ -172,9 +172,11 @@ nav ul a:hover {
 
   font-size: 18px;
   /* background-color: white; */
-  box-shadow: 5px 5px 10px rgba(0,0,0,0.9);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
   text-align: center;
   border-radius: 15px;
+  transition: 0.5s ease;
+  cursor: pointer;
 }
 
 .my_card-image{
@@ -244,4 +246,14 @@ nav ul a:hover {
 
 .my_card-stats .value sup {
   font-size: 12px;
+}
+
+.my_card:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+[data-tilt="true"]{
+  box-shadow: none !important;
+  background-color: rgba(0,0,0,0) !important;
 }
