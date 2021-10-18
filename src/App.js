@@ -160,7 +160,7 @@ function App() {
                   "retina_detect": true
                 }}/>
             <Container>
-              {renderPage()}
+                {renderPage()}
             </Container>
           </main>
           <Footer bgColor="transparentBG" textColor={textColor}></Footer>

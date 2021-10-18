@@ -176,11 +176,9 @@ nav ul a:hover {
   text-align: center;
   border-radius: 15px;
   transition: 0.5s ease;
-  cursor: pointer;
 }
 
 .my_card-image{
-  background-image: url('');
   grid-area: image;
   border-top-left-radius: "15px";
   border-top-right-radius: "15px";
@@ -248,12 +246,16 @@ nav ul a:hover {
   font-size: 12px;
 }
 
-.my_card:hover {
+/* .my_card:hover {
   transform: scale(1.1);
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
-}
+} */
 
 [data-tilt="true"]{
   box-shadow: none !important;
   background-color: rgba(0,0,0,0) !important;
+}
+
+.card{
+  background-color: rgba(0, 0, 0, 0) !important;
 }

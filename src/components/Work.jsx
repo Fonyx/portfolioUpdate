@@ -15,18 +15,18 @@ function Work() {
           repo:"https://github.com/Fonyx/budgie",
           deploy:"https://fonyx-budgie.herokuapp.com/"
         },
-        // {
-        //   title: "Budgie",
-        //   img:"https://github.com/Fonyx/budgie/blob/main/assets/images/show.gif?raw=true",
-        //   bg_color:bgColor,
-        //   text_color:textColor,
-        // },
-        // {
-        //   title: "Budgie",
-        //   img:"https://github.com/Fonyx/budgie/blob/main/assets/images/show.gif?raw=true",
-        //   bg_color:bgColor,
-        //   text_color:textColor,
-        // },
+        {
+          title: "Budgie",
+          img:"https://github.com/Fonyx/budgie/blob/main/assets/images/show.gif?raw=true",
+          bg_color:bgColor,
+          text_color:textColor,
+        },
+        {
+          title: "Budgie",
+          img:"https://github.com/Fonyx/budgie/blob/main/assets/images/show.gif?raw=true",
+          bg_color:bgColor,
+          text_color:textColor,
+        },
       ]
   
       var workPiecesMarkup = []
@@ -39,9 +39,12 @@ function Work() {
       })
 
     return (
-        <div>
-            {workPiecesMarkup}
+      <div className="work_section">
+        <h2 className={`${textColor}`}>WORK</h2>
+        <div className="row">
+          {workPiecesMarkup}
         </div>
+      </div>
     )
 }
 
