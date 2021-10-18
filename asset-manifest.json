@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/Fonyx/portfolioUpdate/static/css/main.191e3340.chunk.css",
+    "main.js": "/Fonyx/portfolioUpdate/static/js/main.7a81957c.chunk.js",
+    "main.js.map": "/Fonyx/portfolioUpdate/static/js/main.7a81957c.chunk.js.map",
+    "runtime-main.js": "/Fonyx/portfolioUpdate/static/js/runtime-main.542820a7.js",
+    "runtime-main.js.map": "/Fonyx/portfolioUpdate/static/js/runtime-main.542820a7.js.map",
+    "static/css/2.a389d3b1.chunk.css": "/Fonyx/portfolioUpdate/static/css/2.a389d3b1.chunk.css",
+    "static/js/2.4c750db3.chunk.js": "/Fonyx/portfolioUpdate/static/js/2.4c750db3.chunk.js",
+    "static/js/2.4c750db3.chunk.js.map": "/Fonyx/portfolioUpdate/static/js/2.4c750db3.chunk.js.map",
+    "static/js/3.bdf4dcee.chunk.js": "/Fonyx/portfolioUpdate/static/js/3.bdf4dcee.chunk.js",
+    "static/js/3.bdf4dcee.chunk.js.map": "/Fonyx/portfolioUpdate/static/js/3.bdf4dcee.chunk.js.map",
+    "index.html": "/Fonyx/portfolioUpdate/index.html",
+    "precache-manifest.a1577803a2d0710fa7f490e2795ba021.js": "/Fonyx/portfolioUpdate/precache-manifest.a1577803a2d0710fa7f490e2795ba021.js",
+    "service-worker.js": "/Fonyx/portfolioUpdate/service-worker.js",
+    "static/css/2.a389d3b1.chunk.css.map": "/Fonyx/portfolioUpdate/static/css/2.a389d3b1.chunk.css.map",
+    "static/css/main.191e3340.chunk.css.map": "/Fonyx/portfolioUpdate/static/css/main.191e3340.chunk.css.map",
+    "static/js/2.4c750db3.chunk.js.LICENSE.txt": "/Fonyx/portfolioUpdate/static/js/2.4c750db3.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.542820a7.js",
+    "static/css/2.a389d3b1.chunk.css",
+    "static/js/2.4c750db3.chunk.js",
+    "static/css/main.191e3340.chunk.css",
+    "static/js/main.7a81957c.chunk.js"
+  ]
+}
