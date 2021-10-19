@@ -98,7 +98,7 @@ main {
 .navbarIcon {
   min-height: 48px;
   max-height: 48px;
-  margin-top: 5px;
+  margin: 7px;
   /* max-height: 150px; */
 }
 
