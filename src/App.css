@@ -330,3 +330,39 @@ nav ul a:hover {
 label{
   color: white !important;
 }
+
+.card{
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.card-title{
+  color: var(--senary);
+  font-weight: 500;
+}
+
+.card-details{
+
+}
+
+.card-tags{
+  padding-top: 10px;
+}
+
+.card-action{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-github-icon{
+  color: var(--senary) !important;
+}
+.material-icons {
+  color: var(--senary) !important;
+}
+
+.bump_up{
+  padding-bottom: 4px;
+}

@@ -14,7 +14,8 @@ import Particles from 'react-particles-js';
 
 function App() {
 
-    const textColor = 'quinary_text'
+    const textColor = 'senary_text'
+    const bgColor = 'quinary_bg'
 
     const [currentPage, setCurrentPage] = useState('Portfolio');
 
@@ -27,7 +28,7 @@ function App() {
         return <Experience textColor={textColor}/>;
       }
       if (currentPage === 'Portfolio') {
-        return <Portfolio textColor={textColor}/>;
+        return <Portfolio textColor={bgColor, textColor}/>;
       }
       if (currentPage === 'Contact') {
         return <Contact textColor={textColor}/>;

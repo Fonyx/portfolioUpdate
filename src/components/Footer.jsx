@@ -11,8 +11,25 @@ const Footer = ({bgColor, textColor}) => {
                 </div>
                 <div className="col l4 offset-l2 s12">
                     <h5 className={`${textColor}`}>Links</h5>
-                    <ul>
-                    <li><a className={`${textColor} text-lighten-1`} href="#!">Link 1</a></li>
+                    <ul className="">
+                        <li>
+                            <a className={`${textColor} text-lighten-1`} href="#!">
+                                <i id="profile-discord-icon" class="fab fa-3x fa-discord">
+                                </i>
+                            </a>
+                        </li>
+                        <li>
+                            <a className={`${textColor} text-lighten-1`} href="#!">
+                                <i id="profile-linkedIn-icon" class="fab fa-3x fa-linkedin">
+                                </i>
+                            </a>
+                        </li>
+                        <li>
+                            <a className={`${textColor} text-lighten-1`} href="#!">
+                                <i id="profile-github-icon" class="fab fa-3x fa-github">
+                                </i>
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 </div>

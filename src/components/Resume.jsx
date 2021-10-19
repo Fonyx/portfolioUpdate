@@ -7,7 +7,7 @@ export default function Resume({textColor}) {
         <div className={`resume_section ${textColor}`}>
             <h2 className={`${textColor}`}>RESUME</h2>
             <a href="https://fonyx.github.io/resume/" target="_blank" rel="noopener noreferrer">
-                <Button className={`quaternary_bg ${textColor}`} waves='orange'>Resume
+                <Button className={`quaternary_bg quinary_text`} waves='orange'>Resume
                 </Button>
             </a>
             <h3>Skills</h3>

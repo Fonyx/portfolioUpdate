@@ -1,10 +1,7 @@
 import React from 'react'
 import Project from './Project'
 
-function Portfolio() {
-
-    let bgColor="secondary_bg";
-    let textColor="quinary_text";
+function Portfolio({bgColor, textColor}) {
 
     const portfolioPieceData = [
         {
@@ -44,7 +41,8 @@ function Portfolio() {
           text_color:textColor,
           repo:"https://github.com/Fonyx/weatherDashboard",
           deploy:"https://fonyx.github.io/weatherDashboard/",
-          description: "An Open Weather Api wrapper application that shows current weather and forecast by city"
+          description: "An Open Weather Api wrapper application that shows current weather and forecast by city",
+          tags:"node, vanillaJs, materialize"
         },
         {
           title: "Employee Tracker CMS",
@@ -52,7 +50,8 @@ function Portfolio() {
           bg_color:bgColor,
           text_color:textColor,
           repo:"https://github.com/Fonyx/employeeTracker",
-          description: "A command line application manages company department budgets and employee salaries"
+          description: "A command line application manages company department budgets and employee salaries",
+          tags: "node, mysql, jest, inquirer"
         },
         {
           title: "E-commerce ORM",
@@ -60,7 +59,8 @@ function Portfolio() {
           bg_color:bgColor,
           text_color:textColor,
           repo:"https://github.com/Fonyx/eCommerceOrm",
-          description: "An ORM for a fake E commerce company selling different categories of products"
+          description: "An ORM for a fake E commerce company selling different categories of products",
+          tags: "node, mysql, jest, sequelize"
         },
       ]
   

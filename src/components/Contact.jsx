@@ -103,7 +103,7 @@ function Contact({textColor}) {
             <h4>Or if it is urgent</h4>
 
             <a href="mailto:nick.alex.ritchie@gmail.com">
-                <Button className={`quaternary_bg ${textColor}`} waves='orange'>nick.alex.ritchie@gmail.com</Button>
+                <Button className={`quaternary_bg quinary_text`} waves='orange'>nick.alex.ritchie@gmail.com</Button>
             </a>
 
         </div>
