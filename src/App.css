@@ -367,36 +367,27 @@ label{
   padding-bottom: 4px;
 }
 
-.job{
+.skill{
   /* border: 1px solid black; */
   border-radius: 5px;
   margin: 5px;
   padding: 5px;
+  float:left;
 }
 
-.job-company{
-  margin-top: 5px;
-  margin-left: 5px;
-  font-size: 30px;
-}
-
-.job-title{
-  margin-left: 10px;
-  font-size: 20px;
-}
-
-.job-description{
-  margin-left: 10px;
-  font-size: 16px;
-}
-
-.job-links{
-  margin-left: 10px;
-}
-
-.link-item{
-  margin-left: 10px;
+.skill-list{
   float: left;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-icon{
+  width: 60px;
+}
+.skill-icon-big{
+  width: 120px;
 }
 
 .about-text{
@@ -409,4 +400,12 @@ label{
   align-items: center;
   margin-bottom: 25px;
   margin-top: 25px;
+}
+
+section.row{
+  margin-bottom: 0;
+}
+
+section ul{
+  padding: 0;
 }

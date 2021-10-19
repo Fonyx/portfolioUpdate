@@ -5,7 +5,7 @@ import 'materialize-css/dist/css/materialize.min.css';
 import {Container} from 'react-materialize';
 import Header from './components/Header'
 import About from './components/About'
-import Experience from './components/Experience'
+// import Experience from './components/Experience'
 import Portfolio from './components/Portfolio'
 import Footer from './components/Footer'
 import Contact from './components/Contact';
@@ -17,7 +17,7 @@ function App() {
     const textColor = 'senary_text'
     const bgColor = 'quinary_bg'
 
-    const [currentPage, setCurrentPage] = useState('Contact');
+    const [currentPage, setCurrentPage] = useState('Resume');
 
     // conditionally update state
     const renderPage = () => {
