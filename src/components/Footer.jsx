@@ -4,34 +4,21 @@ const Footer = ({bgColor, textColor}) => {
     return (
         <footer className="transparentBG">
             <div>
-                <div className="row">
-                <div className="col l6 s12">
-                    <h5 className={`${bgColor} ${textColor}`}>Footer Content</h5>
-                    <p className={`${bgColor} ${textColor} text-lighten-4`}>You can use rows and columns here to organize your footer content.</p>
-                </div>
                 <div className="col l4 offset-l2 s12">
-                    <h5 className={`${textColor}`}>Links</h5>
-                    <ul className="">
-                        <li>
-                            <a className={`${textColor} text-lighten-1`} href="#!">
-                                <i id="profile-discord-icon" class="fab fa-3x fa-discord">
-                                </i>
-                            </a>
-                        </li>
-                        <li>
-                            <a className={`${textColor} text-lighten-1`} href="#!">
-                                <i id="profile-linkedIn-icon" class="fab fa-3x fa-linkedin">
-                                </i>
-                            </a>
-                        </li>
-                        <li>
-                            <a className={`${textColor} text-lighten-1`} href="#!">
-                                <i id="profile-github-icon" class="fab fa-3x fa-github">
-                                </i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                    <div className="footer-icons">
+                        <a className={`footer-icon ${textColor}`} target="_blank" rel="noopener noreferrer" href="https://stackoverflow.com/users/1660198/user1660198">
+                            <i id="profile-stackoverflow-icon" class="fab fa-3x fa-stack-overflow">
+                            </i>
+                        </a>
+                        <a className={`footer-icon ${textColor}`} target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/nicholas-ritchie-55147878/">
+                            <i id="profile-linkedIn-icon" class="fab fa-3x fa-linkedin">
+                            </i>
+                        </a>
+                        <a className={`footer-icon ${textColor}`} target="_blank" rel="noopener noreferrer" href="https://github.com/Fonyx">
+                            <i id="profile-github-icon" class="fab fa-3x fa-github">
+                            </i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </footer>

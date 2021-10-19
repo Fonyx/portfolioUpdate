@@ -10,7 +10,7 @@ const About = ({textColor}) => {
             <h2 className={`${textColor}`}>ABOUT</h2>
             <Row>
                 <img className="displayPicture" src="./assets/images/circle-dp.png" alt="nicks profile"></img>
-                <p className={`${textColor}`}>Hi, my name is</p>
+                <h5 className={`${textColor}`}>Hi, my name is</h5>
                 <h2 className={`${textColor}`}>Nicholas Ritchie</h2>
                 <h3 className={`${textColor}`}>And I build things....internet things</h3>
                 <p className={`about-text ${textColor}`}>Full stack developer with a background in engineering. Certificate in full stack development from the University of Sydney, with skills in nodeJs, react, css frame works and data persistence tools. An enterprising professional with diverse professional history and a warm interpersonal tone. Made the change from engineering to pursue an idea of visualizing career pathways as an interactive map. Built using Django, d3 and BeautifulSoup. From this project I discovered a dormant attraction to compelling visual products and software development. With a hard science background and broad experience in hardware, I will join you with a light-hearted charm and comprehensive understanding of technical group work.</p>

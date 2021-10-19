@@ -402,3 +402,10 @@ label{
 .about-text{
   font-size: 18px;
 }
+
+.footer-icons{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 15px;
+}
