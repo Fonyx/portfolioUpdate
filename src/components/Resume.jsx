@@ -1,15 +1,22 @@
 import React from 'react'
 import {Button} from 'react-materialize'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import resumeDoc from './assets/resume.pdf'
 import '../App.css'
 
 export default function Resume({textColor}) {
     return (
         <div className={`resume_section ${textColor}`}>
             <h2 className={`${textColor}`}>RESUME</h2>
+            <a href={resumeDoc} download="resume.pdf" target="_blank" >
+                <Button className={`quaternary_bg quinary_text resume-button`} waves='orange'>Download
+                </Button>
+            </a>
+            <a className="resume-buttons" href="https://fonyx.github.io/resume/" target="_blank" rel="noopener noreferrer">
+                <Button className={`quaternary_bg quinary_text resume-button`} waves='orange'>Online
+                </Button>
+            </a>
             <section className="row">
-                <h3>Frontend Skills</h3>
+                <h3>Frontend Tools</h3>
                 <ul className="skill-list">
                     <li className="skill">
                         <img className="skill-icon" src="https://raw.githubusercontent.com/d3/d3-logo/master/d3.png"></img>
@@ -33,7 +40,7 @@ export default function Resume({textColor}) {
                 </ul>
             </section>
             <section className="row">
-                <h3>Backend Skills</h3>
+                <h3>Backend Tools</h3>
                 <ul className="skill-list">
                     <li className="skill">
                         <img className="skill-icon-big" src="https://www.ovhcloud.com/sites/default/files/styles/text_media_horizontal/public/2021-05/MongoDB_Logo_FullColorBlack_RGB-4td3yuxzjs.png"></img>
@@ -47,7 +54,7 @@ export default function Resume({textColor}) {
                 </ul>
             </section>
             <section className="row">
-                <h3>Framework Skills</h3>
+                <h3>Framework Tools</h3>
                 <ul className="skill-list">
                     <li className="skill">
                         <img className="skill-icon-big" src="https://buttercms.com/static/images/tech_banners/ExpressJS.png"></img>
@@ -61,7 +68,7 @@ export default function Resume({textColor}) {
                 </ul>
             </section>
             <section className="row">
-                <h3>Analytic Skills</h3>
+                <h3>Analytic Tools</h3>
                 <ul className="skill-list">
                     
                     <li className="skill">
@@ -89,10 +96,6 @@ export default function Resume({textColor}) {
                     </li>
                 </ul>
             </section>
-            <a href="https://fonyx.github.io/resume/" target="_blank" rel="noopener noreferrer">
-                <Button className={`quaternary_bg quinary_text`} waves='orange'>Resume
-                </Button>
-            </a>
         </div>
     )
 }

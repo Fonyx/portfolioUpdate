@@ -409,3 +409,13 @@ section.row{
 section ul{
   padding: 0;
 }
+
+.resume-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume-button{
+  margin: 0px 10px;
+}
