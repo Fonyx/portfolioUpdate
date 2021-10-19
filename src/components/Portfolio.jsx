@@ -64,14 +64,14 @@ function Portfolio({bgColor, textColor}) {
         },
       ]
   
-      var portfolioPiecesMarkup = []
+    var portfolioPiecesMarkup = []
       
-      portfolioPieceData.forEach((portfolioPiece, index) => {
-  
-        portfolioPiecesMarkup.push(
-          <Project key={index} props={portfolioPiece}/>
-        )
-      })
+    portfolioPieceData.forEach((portfolioPiece, index) => {
+
+      portfolioPiecesMarkup.push(
+        <Project key={index} props={portfolioPiece}/>
+      )
+    })
 
     return (
       <div className="portfolio_section">

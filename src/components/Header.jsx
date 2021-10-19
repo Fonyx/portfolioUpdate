@@ -18,10 +18,10 @@ const Header = ({bgColor, textColor, currentPage, updatePage}) => {
                             onClick={() => updatePage('About')} 
                             className={currentPage==='About'? `active ${textColor}`:`inactive ${textColor}`}>About</a>
                         </li>
-                        <li className="sidenav_link"><a href="#experience"  
+                        {/* <li className="sidenav_link"><a href="#experience"  
                             onClick={() => updatePage('Experience')} 
                             className={currentPage==='Experience'? `active ${textColor}`:`inactive ${textColor}`}>Experience</a>
-                        </li>
+                        </li> */}
                         <li className="sidenav_link"><a href="#portfolio"        
                             onClick={() =>  updatePage('Portfolio')} 
                             className={currentPage==='Portfolio'? `active ${textColor}`:`inactive ${textColor}`}>Portfolio</a>
@@ -38,7 +38,7 @@ const Header = ({bgColor, textColor, currentPage, updatePage}) => {
                 }
                 >
                 <NavItem className={currentPage==='About'? `active ${textColor}`:`inactive ${textColor}`} onClick={() =>  updatePage('About')}>About</NavItem>
-                <NavItem className={currentPage==='Experience'? `active ${textColor}`:`inactive ${textColor}`} onClick={() =>  updatePage('Experience')}>Experience</NavItem>
+                {/* <NavItem className={currentPage==='Experience'? `active ${textColor}`:`inactive ${textColor}`} onClick={() =>  updatePage('Experience')}>Experience</NavItem> */}
                 <NavItem className={currentPage==='Portfolio'? `active ${textColor}`:`inactive ${textColor}`} onClick={() =>  updatePage('Portfolio')}>Portfolio</NavItem>
                 <NavItem className={currentPage==='Contact'? `active ${textColor}`:`inactive ${textColor}`} onClick={() =>  updatePage('Contact')}>Contact</NavItem>
                 <NavItem className={currentPage==='Resume'? `active ${textColor}`:`inactive ${textColor}`} onClick={() =>  updatePage('Resume')}>Resume</NavItem>

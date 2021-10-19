@@ -17,15 +17,12 @@ function App() {
     const textColor = 'senary_text'
     const bgColor = 'quinary_bg'
 
-    const [currentPage, setCurrentPage] = useState('Portfolio');
+    const [currentPage, setCurrentPage] = useState('About');
 
     // conditionally update state
     const renderPage = () => {
       if (currentPage === 'About') {
         return <About textColor={textColor}/>;
-      }
-      if (currentPage === 'Experience') {
-        return <Experience textColor={textColor}/>;
       }
       if (currentPage === 'Portfolio') {
         return <Portfolio textColor={bgColor, textColor}/>;

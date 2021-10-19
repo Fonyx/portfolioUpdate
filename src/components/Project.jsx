@@ -19,7 +19,7 @@ const Project = ({props}) => {
     }
 
     return (
-        <div className='col s12'>
+        <div className='col s12' data-tile>
             <Card
                 actions={actionsDeployMarkup}
                 className={`card transparentBG`}

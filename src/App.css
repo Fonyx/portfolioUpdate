@@ -366,3 +366,39 @@ label{
 .bump_up{
   padding-bottom: 4px;
 }
+
+.job{
+  /* border: 1px solid black; */
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
+}
+
+.job-company{
+  margin-top: 5px;
+  margin-left: 5px;
+  font-size: 30px;
+}
+
+.job-title{
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.job-description{
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.job-links{
+  margin-left: 10px;
+}
+
+.link-item{
+  margin-left: 10px;
+  float: left;
+}
+
+.about-text{
+  font-size: 18px;
+}
