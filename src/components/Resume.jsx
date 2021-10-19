@@ -1,6 +1,6 @@
 import React from 'react'
 import {Button} from 'react-materialize'
-import resumeDoc from './assets/resume.pdf'
+import resumeDoc from '../resume.pdf'
 import '../App.css'
 
 export default function Resume({textColor}) {
