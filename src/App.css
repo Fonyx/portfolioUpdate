@@ -271,14 +271,14 @@ nav ul a:hover {
 .input-field input[type]:focus:not([readonly]),
 .input-field textarea:not([readonly]),
 .input-field textarea:focus:not([readonly]) {
-    border-bottom: 1px solid var(--quinary) !important;
-    box-shadow: 0 1px 0 0 var(--quinary) !important;
+    border-bottom: 1px solid var(--senary) !important;
+    box-shadow: 0 1px 0 0 var(--senary) !important;
 }
 
 /* Inactive/Active Default input label color */
 .input-field input[type]:focus:not([readonly])+label,
 .input-field textarea:focus:not([readonly])+label {
-    color: var(--quinary) !important;
+    color: var(--senary) !important;
 }
 
 /* Active/Inactive Invalid input field colors */
@@ -286,8 +286,8 @@ nav ul a:hover {
 .input-field input[type].invalid:focus,
 .input-field textarea.invalid,
 .input-field textarea.invalid:focus {
-    border-bottom: 1px solid var(--quaternary) !important;
-    box-shadow: 0 1px 0 0 var(--quaternary) !important;
+    border-bottom: 1px solid var(--fox-lightest-purple) !important;
+    box-shadow: 0 1px 0 0 var(--fox-lightest-purple) !important;
 }
 
 /* Active/Inactive Invalid input label color */
@@ -328,7 +328,7 @@ nav ul a:hover {
 }
 
 label{
-  color: white !important;
+  color: black !important;
 }
 
 .card{

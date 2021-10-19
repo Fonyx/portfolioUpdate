@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import {Button, TextInput, Icon} from 'react-materialize'
 import '../App.css'
 
@@ -24,6 +24,7 @@ function Contact({textColor}) {
     const [complete, setComplete] = useState(false);
 
     const handleInputChange = (e) => {
+        e.preventDefault()
         // Getting the value and name of the input which triggered the change
         const { target } = e;
         const inputElement = target.id;
@@ -57,17 +58,21 @@ function Contact({textColor}) {
             setErrorMessage('But what do you want to know?');
             return;
         }
-        // check the form has a message
+        // set complete to true
         setComplete(true);
+        setErrorMessage('');
 
-        // If everything goes according to plan, we want to clear out the input after a successful registration.
-        setName('');
-        setMessage('');
-        setEmail('');
+        setTimeout(() => {
+            setErrorMessage('');
+            setComplete(false);
+            setName('');
+            setMessage('');
+            setEmail('');
+        }, 2000);
     };
 
     return (
-        <div className={`contact_section center-align ${textColor}`}>
+        <div className={`center-align ${textColor}`}>
             <h2 className={`${textColor}`}>CONTACT</h2>
 
             <h4>Let me know what you would like to discuss</h4>
@@ -98,7 +103,7 @@ function Contact({textColor}) {
             </form>
             {errorMessage && (
                 <div>
-                <p className="error-text">{errorMessage}</p>
+                    <p className="error-text">{errorMessage}</p>
                 </div>
             )}
             {complete && (
@@ -107,7 +112,7 @@ function Contact({textColor}) {
                 </div>
             )}
 
-            <h4>Or if it is urgent</h4>
+            <h4>Or If Time Is Of The Essence</h4>
 
             <a href="mailto:nick.alex.ritchie@gmail.com">
                 <Button className={`quaternary_bg quinary_text`} waves='orange'>nick.alex.ritchie@gmail.com</Button>
