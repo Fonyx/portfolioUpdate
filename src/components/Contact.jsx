@@ -21,47 +21,49 @@ function Contact({textColor}) {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
+    const [complete, setComplete] = useState(false);
 
     const handleInputChange = (e) => {
         // Getting the value and name of the input which triggered the change
         const { target } = e;
-        const inputType = target.name;
+        const inputElement = target.id;
         const inputValue = target.value;
-    
+        
         // Based on the input type, we set the state of either email, username, and password
-        if (inputType === 'email') {
-          setEmail(inputValue);
-        } else if (inputType === 'name') {
-          setName(inputValue);
+        if (inputElement === 'email') {
+            setEmail(inputValue);
+        } else if (inputElement === 'name') {
+            setName(inputValue);
         } else {
-          setMessage(inputValue);
+            setMessage(inputValue);
         }
     };
     
     const handleFormSubmit = (e) => {
-    // Preventing the default behavior of the form submit (which is to refresh the page)
-    e.preventDefault();
-    // check the email is valid
-    if (!validateEmail(email)) {
-        setErrorMessage('That email address looks fishy');
-        return;
-    }
-    // check the form has a name
-    if (!validateNotEmpty(name)) {
-        setErrorMessage('But I don\'t know who you are');
-        return;
-    }
-    // check the form has a message
-    if (!validateNotEmpty(message)) {
-        setErrorMessage('I\'m going to need more information than that mate');
-        return;
-    }
-    alert(`Thanks ${name}, I'll get back to you soon :)`);
+        // Preventing the default behavior of the form submit (which is to refresh the page)
+        e.preventDefault();
+        // check the email is valid
+        if (!validateEmail(email)) {
+            setErrorMessage('That email address looks fishy');
+            return;
+        }
+        // check the form has a name
+        if (!validateNotEmpty(name)) {
+            setErrorMessage('But I don\'t know who you are');
+            return;
+        }
+        // check the form has a message
+        if (!validateNotEmpty(message)) {
+            setErrorMessage('But what do you want to know?');
+            return;
+        }
+        // check the form has a message
+        setComplete(true);
 
-    // If everything goes according to plan, we want to clear out the input after a successful registration.
-    setName('');
-    setMessage('');
-    setEmail('');
+        // If everything goes according to plan, we want to clear out the input after a successful registration.
+        setName('');
+        setMessage('');
+        setEmail('');
     };
 
     return (
@@ -81,6 +83,7 @@ function Contact({textColor}) {
                     icon={<Icon>email</Icon>}
                     id="email"
                     label="Email"
+                    type="email"
                     onChange={handleInputChange}
                     validate
                 />
@@ -89,7 +92,6 @@ function Contact({textColor}) {
                     id="message"
                     label="Let's chat, discuss or even....gab"
                     onChange={handleInputChange}
-                    validate
                 />
                 <button className="btn waves-effect waves-orange quaternary_bg quinary_text" type="button" onClick={handleFormSubmit}>Submit</button>
 
@@ -97,6 +99,11 @@ function Contact({textColor}) {
             {errorMessage && (
                 <div>
                 <p className="error-text">{errorMessage}</p>
+                </div>
+            )}
+            {complete && (
+                <div>
+                    <p className="complete-text">Thanks, I'll get back to you shortly</p>
                 </div>
             )}
 
